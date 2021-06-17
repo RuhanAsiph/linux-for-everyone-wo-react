@@ -52,7 +52,7 @@ app.post('/', (req, res) => {
     newProd.save();
     res.redirect('/');
 });
-
-app.listen(3000, function(){
+const port = process.env.PORT
+app.listen(port, function(){
     console.log('server started @ port 3000');
 });
